@@ -1,0 +1,458 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #cfe3e5;
+}
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: minmax(5rem auto);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #cfe3e5;
+}
+header {
+    grid-column: span 12;
+    grid-row: 1;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: minmax(5rem auto)
+}
+.logo {
+    grid-column: span 12;
+    grid-row: 1;
+}
+.logo img {
+    width: 15rem;
+    height: auto;
+    background-size: contain;
+    margin-bottom: 3rem;
+}
+nav {
+    grid-column: span 12;
+    grid-row: 2;
+}
+.navbutton .destination, .navbutton .widedestination {
+    padding: 1rem;
+    border: .25rem solid #002426;
+    border-radius: 1.5rem;
+    font: 700 1.5rem/1.5 Arial, san-serif;
+    color: #002426;
+    background-color: #ff5f2e;
+    box-shadow: 0 .25rem .25rem 0 rgba(0,36,38,.75)
+}
+.navbutton .destination:hover, .navbutton .widedestination:hover {
+    background-color: #00a7cc;
+}
+.navbutton .widedestination {
+    display: none;
+}
+@media only screen and (min-width: 40rem) {
+    .navbutton .destination {
+        display: none;
+    }
+    .navbutton .widedestination {
+        display: block;
+    }
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #61bf25;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+}
+.sidenav a, .dropdown-btn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font: 700 1.5rem/1.5 Arial, san-serif;
+    color: #3d2f24;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #cfe3e5;
+}
+.active {
+    background-color: #002426;
+    color: #ff5f2e;
+}
+.dropdown-container {
+    display: none;
+    background-color: #00a7cc;
+    padding-left: 8px;
+}
+.dropdown-container a {
+    color: #002426;
+}
+@media only screen and (min-width: 40rem){
+    nav {
+        grid-column: span 3;
+        grid-row: 1;
+        text-align: left;
+        align-content: center;
+    }
+    .logo {
+        grid-column: span 9;
+        grid-row: 1;
+    }
+    .logo {
+        float: right;
+        text-align: right;
+    }
+}
+.tagline {
+    grid-column: span 12;
+    grid-row: 2;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font: 2rem/1.5 "Rampart One", Arial, sans-serif;
+    color: #002426;
+}
+.inseason {
+    grid-column: span 12;
+    grid-row: 3;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font: 900 1.25rem/1.5 Arial, sans-serif;
+    color: #002426;
+}
+.inseason div {
+    margin: 1rem;
+    padding: 2rem;
+    border: .25rem solid #002426;
+    border-radius: 1rem;
+    box-shadow: 0 .25rem .25rem 0 rgba(0,36,38,.75);
+}
+.inseason h3 {
+    font: 700 1.5rem/.75 Arial, sans-serif;
+    color: #cfe3e5;
+    padding: .5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem);
+}
+.inseason p {
+    font: 400 1rem/1.5 Arial, sans-serif;
+    color: #cfe3e5;
+    padding: .5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem);
+}
+.squamish {
+    background-color: #002426;
+}
+.bluesky {
+    background-image: url(images/mtbluesky.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.rocklands {
+    background-image: url(images/rocklands-button.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.magicwood {
+    background-image: url(images/magicwood.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media only screen and (min-width: 40rem) {
+    .inseason {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: minmax(5rem auto);
+    }
+    .seasontitle {
+        grid-column: span 12;
+        grid-row: 1;
+        text-align: left;
+    }
+    .squamish {
+        grid-column: span 6;
+        grid-row: 2;
+    }
+    .bluesky {
+        grid-column: span 6;
+        grid-row: 2;
+    }
+    .rocklands {
+        grid-column: span 6;
+        grid-row: 3;
+    }
+    .magicwood {
+        grid-column: span 6;
+        grid-row: 3;
+    }
+}
+@media only screen and (min-width: 60rem) {
+    .inseason {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: minmax(5rem auto);
+    }
+    .seasontitle {
+        grid-column: span 12;
+        grid-row: 1;
+    }
+    .squamish {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+    .bluesky {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+    .rocklands {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+    .magicwood {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+}
+.planahead {
+    grid-column: span 12;
+    grid-row: 4;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font: 900 1.25rem/1.5 Arial, sans-serif;
+    color: #002426;
+}
+.planahead div {
+    margin: 1rem;
+    padding: 2rem;
+    border: .25rem solid #002426;
+    box-shadow: 0 .25rem .25rem 0 rgba(0,36,38,.75);
+    border-radius: 1rem;
+    background-color: #00a7cc;
+}
+.brione {
+    background-image: url(images/brione.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.planahead h3 {
+    font: 700 1.5rem/.75 Arial, sans-serif;
+    color: #cfe3e5;
+    padding: .5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem);
+}
+.planahead p {
+    font: 400 1rem/1.5 Arial, sans-serif;
+    color: #cfe3e5;
+    padding: .5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem);
+}
+@media only screen and (min-width: 40rem) {
+    .planahead {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: minmax(5rem auto);
+    }
+    .plantitle {
+        grid-column: span 12;
+        grid-row: 1;
+        text-align: left;
+    }
+    .fontainebleu {
+        grid-column: span 6;
+        grid-row: 2;
+    }
+    .hueco {
+        grid-column: span 6;
+        grid-row: 2;
+    }
+    .brione {
+        grid-column: span 6;
+        grid-row: 3;
+    }
+    .bishop {
+        grid-column: span 6;
+        grid-row: 3;
+    }
+}
+@media only screen and (min-width: 60rem) {
+    .planahead {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: minmax(5rem auto);
+    }
+    .plantitle {
+        grid-column: span 12;
+        grid-row: 1;
+    }
+    .fontainebleu {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+    .hueco {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+    .brione {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+    .bishop {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+}
+.about {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font: 900 1.25rem/1.5 Arial, sans-serif;
+    color: #002426;
+}
+.about div {
+    margin: 1rem;
+    padding: 1rem;
+}
+.about img {
+    width: 15rem;
+    height: auto;
+    background-size: contain;
+}
+.about p {
+    font: 400 1rem/1.5 Arial, sans-serif;
+    text-align: left;
+}
+@media only screen and (min-width: 40rem) {
+    .about {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: minmax(5rem auto);
+    }
+    .about div {
+        margin: auto;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    .adventure {
+        grid-column: span 12;
+        grid-row: 1;
+    }
+    .sites {
+        grid-column: span 12;
+        grid-row: 2;
+    }
+    .food {
+        grid-column: span 6;
+        grid-row: 3;
+    }
+    .shopping {
+        grid-column: span 6;
+        grid-row: 3;
+    }
+}
+@media only screen and (min-width: 60rem) {
+    .sites {
+        grid-column: span 4;
+        grid-row: 2;
+    }
+    .food {
+        grid-column: span 4;
+        grid-row: 2;
+    }
+    .shopping {
+        grid-column: span 4;
+        grid-row: 2;
+    }
+}
+footer {
+    grid-column: span 12;
+    grid-row: 7;
+    margin: 0;
+    padding: 2rem;
+    border-top: .25rem solid #002426;
+    text-align: center;
+}
+.footerlogo p {
+    font: 1.75rem/2 "Lilita One", Arial, sans-serif;
+    color: #002426;
+}
+.footernav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font: 700 1.5rem/2 Arial, sans-serif;
+    color: #002426;
+}
+.footernav a {
+    padding: .75rem;
+    border-radius: 1rem;
+}
+.footernav a:link {
+    text-decoration: none;
+}
+.footernav a:visited {
+    color: #002426;
+}
+.footernav a:hover, .footernav a:focus {
+    background-color: #ff5f2e;
+}
+.footernav a:active {
+    background-color: #00a7cc;
+}
+@media only screen and (min-width: 40rem) {
+    footer {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: minmax(5rem auto);
+    }
+    .footerlogo {
+        grid-column: span 3;
+        grid-row: 1;
+        text-align: left;
+    }
+    .footernav {
+        grid-column: span 9;
+        grid-row: 1;
+    }
+    .footernav ul {
+        float: right;
+        text-align: left;
+        padding-top: 1.75rem;
+    }
+    .footernav li {
+        padding-left: 1rem;
+    }
+}
+@media only screen and (min-width: 60rem) {
+    .footernav li {
+        display: inline;
+    }
+}
