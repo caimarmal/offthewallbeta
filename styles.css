@@ -1,7 +1,20 @@
+/* overall css */
+
+* {
+    box-sizing: border-box;
+    p {
+        font: 400 1rem/1.5 Arial, sans-serif;
+        color: #002426;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        background-size: contain;
+    }
+}
 html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     background-color: #cfe3e5;
 }
 body {
@@ -14,6 +27,9 @@ body {
     padding: 0;
     background-color: #cfe3e5;
 }
+
+/* header & logo */
+
 header {
     grid-column: span 12;
     grid-row: 1;
@@ -34,6 +50,9 @@ header {
     background-size: contain;
     margin-bottom: 3rem;
 }
+
+/* nav */
+
 nav {
     grid-column: span 12;
     grid-row: 2;
@@ -123,6 +142,9 @@ nav {
         text-align: right;
     }
 }
+
+/* tag line */
+
 .tagline {
     grid-column: span 12;
     grid-row: 2;
@@ -132,6 +154,9 @@ nav {
     font: 2rem/1.5 "Rampart One", Arial, sans-serif;
     color: #002426;
 }
+
+/* homepage */
+
 .inseason {
     grid-column: span 12;
     grid-row: 3;
@@ -330,7 +355,12 @@ nav {
         grid-row: 2;
     }
 }
+
+/* about page */
+
 .about {
+    grid-column: span 12;
+    grid-row: 3;
     margin: 1rem;
     padding: 1rem;
     text-align: center;
@@ -392,9 +422,180 @@ nav {
         grid-row: 2;
     }
 }
-footer {
+
+/* location pages */
+
+.location-intro {
+    grid-column: span 12;
+    grid-row: 3;
+    margin: 1rem;
+    padding: .5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.location-intro div {
+        height: 30rem;
+        background-image: url(images/brione.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 35% 65%;
+}
+.location-intro h3 {
+    font: 700 1.5rem/1.5 Arial, sans-serif;
+    color: #002426;
+}
+.jump-to-nav {
+    grid-column: span 12;
+    grid-row: 4;
+    margin: 0;
+    padding: 1rem;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    border-bottom: .25rem solid #002426;
+}
+.jump-to-nav h3 {
+    font: 700 1.5rem/1.5 Arial, sans-serif;
+    color: #002426;
+    text-align: left;
+    margin: 1rem;
+}
+.jump-to-nav button, .location-sites button, .location-food button, .location-shopping button {
+    width: 25%;
+    height: auto;
+    border: .25rem solid #002426;
+    border-radius: 1rem;
+    background-color: #00a7cc;
+    margin: 1rem;
+    padding: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font: 700 1rem/1.5 Arial, sans-serif;
+    color: #002426;
+}
+.location-sites {
+    grid-column: span 12;
+    grid-row: 5;
+    margin: 1rem;
+    padding: .5rem;
+    text-align: center;
+}
+.location-sites img {
+    width: 15rem;
+    height: auto;
+    background-size: contain;
+}
+.location-sites h2 {
+    font: 900 3rem/1.5 Arial, sans-serif;
+    color: #002426;
+}
+.location-sites h3 {
+    font: 700 1.5rem/1.5 Arial, sans-serif;
+    color: #002426;
+    text-align: left;
+}
+.location-sites p {
+    text-align: left;
+}
+.location-sites-aside, .location-food-aside, .location-shopping-aside {
+    display: none;
+    background-color: #61bf25;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 2rem;
+    margin-top: 20rem;
+    margin-right: 2rem;
+    font: 1.5rem/1.5 "Rock Salt", Arial, sans-serif;
+    color: #3d2f24;
+}
+.location-sites-aside p, .location-food-aside p, .location-shopping-aside p {
+    color: #3d2f24;
+}
+.location-food {
+    grid-column: span 12;
+    grid-row: 6;
+    margin: 1rem;
+    padding: .5rem;
+    text-align: center;
+}
+.location-food img {
+    width: 15rem;
+    height: auto;
+    background-size: contain;
+}
+.location-food h2 {
+    font: 900 3rem/1.5 Arial, sans-serif;
+    color: #002426;
+}
+.location-food h3 {
+    font: 700 1.5rem/1.5 Arial, sans-serif;
+    color: #002426;
+    text-align: left;
+}
+.location-food p {
+    text-align: left;
+}
+.location-shopping {
     grid-column: span 12;
     grid-row: 7;
+    margin: 1rem;
+    padding: .5rem;
+    text-align: center;
+}
+.location-shopping img {
+    width: 15rem;
+    height: auto;
+    background-size: contain;
+}
+.location-shopping h2 {
+    font: 900 3rem/1.5 Arial, sans-serif;
+    color: #002426;
+}
+.location-shopping h3 {
+    font: 700 1.5rem/1.5 Arial, sans-serif;
+    color: #002426;
+    text-align: left;
+}
+.location-shopping p {
+    text-align: left;
+}
+@media only screen and (min-width: 40rem) {
+    .location-sites {
+        grid-column: span 9;
+        grid-row: 5;
+    }
+    .location-sites-aside {
+        display: block;
+        grid-column: span 3;
+        grid-row: 5;
+    }
+    .location-food {
+        grid-column: span 9;
+        grid-row: 6;
+    }
+    .location-food-aside {
+        display: block;
+        grid-column: span 3;
+        grid-row: 6;
+    }
+    .location-shopping {
+        grid-column: span 9;
+        grid-row: 7;
+    }
+    .location-shopping-aside {
+        display: block;
+        grid-column: span 3;
+        grid-row: 7;
+    }
+}
+
+/* footer */
+
+footer {
+    grid-column: span 12;
+    grid-row: 8;
     margin: 0;
     padding: 2rem;
     border-top: .25rem solid #002426;
