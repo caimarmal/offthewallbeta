@@ -482,18 +482,18 @@ nav {
     text-align: left;
     margin: 1rem;
 }
-.jump-to-nav button, .location-sites button, .location-food button, .location-shopping button {
-    width: 25%;
+.jump-to-nav .button-style, .location-sites .button-style, .location-food .button-style, .location-shopping .button-style {
+    display: inline-block;
+    width: 10rem;
     height: auto;
     border: .25rem solid #002426;
     border-radius: 1rem;
     background-color: #00a7cc;
-    margin: 1rem;
+    margin: .5rem;
     padding: 1rem;
-    margin-top: 0;
-    margin-bottom: 0;
     font: 700 1rem/1.5 Arial, sans-serif;
     color: #002426;
+    text-decoration: none;
 }
 .location-sites {
     grid-column: span 12;
