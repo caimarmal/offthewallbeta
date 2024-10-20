@@ -166,7 +166,13 @@ nav {
     font: 900 1.25rem/1.5 Arial, sans-serif;
     color: #002426;
 }
+.inseason a:link {
+    text-decoration: none;
+}
 .inseason div {
+    width: auto;
+    height: 20rem;
+    position: relative;
     margin: 1rem;
     padding: 2rem;
     border: .25rem solid #002426;
@@ -174,35 +180,39 @@ nav {
     box-shadow: 0 .25rem .25rem 0 rgba(0,36,38,.75);
 }
 .inseason h3 {
+    position: absolute;
+    top: 0;
     font: 700 1.5rem/.75 Arial, sans-serif;
     color: #cfe3e5;
     padding: .5rem;
-    border-radius: 1rem;
-    backdrop-filter: blur(1rem);
+    border-radius: .25rem;
+    background-color: #002426;
 }
 .inseason p {
+    position: absolute;
+    bottom: 0;
     font: 400 1rem/1.5 Arial, sans-serif;
     color: #cfe3e5;
     padding: .5rem;
-    border-radius: 1rem;
-    backdrop-filter: blur(1rem);
-}
-.squamish {
+    border-radius: .25rem;
     background-color: #002426;
 }
-.bluesky {
+.squamish-style {
+    background-color: #002426;
+}
+.bluesky-style {
     background-image: url(images/mtbluesky.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.rocklands {
+.rocklands-style {
     background-image: url(images/rocklands-button.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.magicwood {
+.magicwood-style {
     background-image: url(images/magicwood.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -236,7 +246,7 @@ nav {
         grid-row: 3;
     }
 }
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 70rem) {
     .inseason {
         display: grid;
         grid-template-columns: auto;
@@ -272,7 +282,13 @@ nav {
     font: 900 1.25rem/1.5 Arial, sans-serif;
     color: #002426;
 }
+.planahead a:link {
+    text-decoration: none;
+}
 .planahead div {
+    width: auto;
+    height: 20rem;
+    position: relative;
     margin: 1rem;
     padding: 2rem;
     border: .25rem solid #002426;
@@ -280,25 +296,29 @@ nav {
     border-radius: 1rem;
     background-color: #00a7cc;
 }
-.brione {
+.brione-style {
     background-image: url(images/brione.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .planahead h3 {
+    position: absolute;
+    top: 0;
     font: 700 1.5rem/.75 Arial, sans-serif;
     color: #cfe3e5;
     padding: .5rem;
-    border-radius: 1rem;
-    backdrop-filter: blur(1rem);
+    border-radius: .25rem;
+    background-color: #002426;
 }
 .planahead p {
+    position: absolute;
+    bottom: 0;
     font: 400 1rem/1.5 Arial, sans-serif;
     color: #cfe3e5;
     padding: .5rem;
-    border-radius: 1rem;
-    backdrop-filter: blur(1rem);
+    border-radius: .25rem;
+    background-color: #002426;
 }
 @media only screen and (min-width: 40rem) {
     .planahead {
@@ -328,7 +348,7 @@ nav {
         grid-row: 3;
     }
 }
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 70rem) {
     .planahead {
         display: grid;
         grid-template-columns: auto;
@@ -429,16 +449,16 @@ nav {
     grid-column: span 12;
     grid-row: 3;
     margin: 1rem;
-    padding: .5rem;
+    padding: 2rem;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 .location-intro div {
-        height: 30rem;
-        background-image: url(images/brione.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 35% 65%;
+    height: 30rem;
+    background-image: url(images/brione.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 35% 65%;
 }
 .location-intro h3 {
     font: 700 1.5rem/1.5 Arial, sans-serif;
@@ -448,7 +468,7 @@ nav {
     grid-column: span 12;
     grid-row: 4;
     margin: 0;
-    padding: 1rem;
+    padding: 2rem;
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 5rem;
@@ -479,7 +499,7 @@ nav {
     grid-column: span 12;
     grid-row: 5;
     margin: 1rem;
-    padding: .5rem;
+    padding: 2rem;
     text-align: center;
 }
 .location-sites img {
@@ -503,21 +523,21 @@ nav {
     display: none;
     background-color: #61bf25;
     border-radius: 1rem;
-    margin: 1rem;
+    margin: 2rem;
     padding: 2rem;
-    margin-top: 20rem;
-    margin-right: 2rem;
     font: 1.5rem/1.5 "Rock Salt", Arial, sans-serif;
     color: #3d2f24;
 }
-.location-sites-aside p, .location-food-aside p, .location-shopping-aside p {
+.location-sites-aside li, .location-food-aside li, .location-shopping-aside li {
+    font: 400 1rem/1.5 Arial, sans-serif;
     color: #3d2f24;
+    padding: 2rem;
 }
 .location-food {
     grid-column: span 12;
     grid-row: 6;
     margin: 1rem;
-    padding: .5rem;
+    padding: 2rem;
     text-align: center;
 }
 .location-food img {
@@ -541,7 +561,7 @@ nav {
     grid-column: span 12;
     grid-row: 7;
     margin: 1rem;
-    padding: .5rem;
+    padding: 2rem;
     text-align: center;
 }
 .location-shopping img {
@@ -563,31 +583,64 @@ nav {
 }
 @media only screen and (min-width: 40rem) {
     .location-sites {
+        grid-column: span 12;
+        grid-row: 5
+    }
+    .location-sites-aside {
+        display: block;
+        grid-column: span 12;
+        grid-row: 6;
+    }
+    .location-food {
+        grid-column: span 12;
+        grid-row: 7;
+    }
+    .location-food-aside {
+        display: block;
+        
+        grid-column: span 12;
+        grid-row: 8;
+    }
+    .location-shopping {
+        grid-column: span 12;
+        grid-row: 9;
+    }
+    .location-shopping-aside {
+        display: block;
+        grid-column: span 12;
+        grid-row: 10;
+    }
+}
+@media only screen and (min-width: 60rem) {
+    .location-sites {
         grid-column: span 9;
         grid-row: 5;
     }
     .location-sites-aside {
-        display: block;
         grid-column: span 3;
         grid-row: 5;
+        margin-top: 20rem;
+        margin-right: 2rem;
     }
     .location-food {
         grid-column: span 9;
         grid-row: 6;
     }
     .location-food-aside {
-        display: block;
         grid-column: span 3;
         grid-row: 6;
+        margin-top: 20rem;
+        margin-right: 2rem;
     }
     .location-shopping {
         grid-column: span 9;
         grid-row: 7;
     }
     .location-shopping-aside {
-        display: block;
         grid-column: span 3;
         grid-row: 7;
+        margin-top: 20rem;
+        margin-right: 2rem;
     }
 }
 
@@ -595,7 +648,7 @@ nav {
 
 footer {
     grid-column: span 12;
-    grid-row: 8;
+    grid-row: 11;
     margin: 0;
     padding: 2rem;
     border-top: .25rem solid #002426;
