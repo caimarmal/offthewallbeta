@@ -445,20 +445,22 @@ nav {
 
 /* location pages */
 
-.location-intro {
+.location-photo {
     grid-column: span 12;
     grid-row: 3;
-    margin: 1rem;
-    padding: 2rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-.location-intro div {
-    height: 30rem;
+    height: 40rem;
     background-image: url(images/brione.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 35% 65%;
+}
+.location-intro {
+    grid-column: span 12;
+    grid-row: 4;
+    margin: 1rem;
+    padding: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .location-intro h3 {
     font: 700 1.5rem/1.5 Arial, sans-serif;
@@ -466,7 +468,7 @@ nav {
 }
 .jump-to-nav {
     grid-column: span 12;
-    grid-row: 4;
+    grid-row: 5;
     margin: 0;
     padding: 2rem;
     padding-top: 0;
@@ -497,7 +499,7 @@ nav {
 }
 .location-sites {
     grid-column: span 12;
-    grid-row: 5;
+    grid-row: 6;
     margin: 1rem;
     padding: 2rem;
     text-align: center;
@@ -515,9 +517,12 @@ nav {
     font: 700 1.5rem/1.5 Arial, sans-serif;
     color: #002426;
     text-align: left;
+    background-color: #00a7cc;
+    padding: 1rem;
 }
 .location-sites p {
     text-align: left;
+    display: none;
 }
 .location-sites-aside, .location-food-aside, .location-shopping-aside {
     display: none;
@@ -535,7 +540,7 @@ nav {
 }
 .location-food {
     grid-column: span 12;
-    grid-row: 6;
+    grid-row: 7;
     margin: 1rem;
     padding: 2rem;
     text-align: center;
@@ -553,13 +558,16 @@ nav {
     font: 700 1.5rem/1.5 Arial, sans-serif;
     color: #002426;
     text-align: left;
+    background-color: #00a7cc;
+    padding: 1rem;
 }
 .location-food p {
     text-align: left;
+    display: none;
 }
 .location-shopping {
     grid-column: span 12;
-    grid-row: 7;
+    grid-row: 8;
     margin: 1rem;
     padding: 2rem;
     text-align: center;
@@ -577,68 +585,70 @@ nav {
     font: 700 1.5rem/1.5 Arial, sans-serif;
     color: #002426;
     text-align: left;
+    background-color: #00a7cc;
+    padding: 1rem;
 }
 .location-shopping p {
     text-align: left;
+    display: none;
 }
 @media only screen and (min-width: 40rem) {
     .location-sites {
         grid-column: span 12;
-        grid-row: 5
+        grid-row: 6
     }
     .location-sites-aside {
         display: block;
         grid-column: span 12;
-        grid-row: 6;
+        grid-row: 7;
     }
     .location-food {
         grid-column: span 12;
-        grid-row: 7;
+        grid-row: 8;
     }
     .location-food-aside {
         display: block;
-        
         grid-column: span 12;
-        grid-row: 8;
+        grid-row: 9;
     }
     .location-shopping {
         grid-column: span 12;
-        grid-row: 9;
+        grid-row: 10;
     }
     .location-shopping-aside {
         display: block;
         grid-column: span 12;
-        grid-row: 10;
+        grid-row: 11;
     }
 }
 @media only screen and (min-width: 60rem) {
     .location-sites {
         grid-column: span 9;
-        grid-row: 5;
+        grid-row: 6;
     }
     .location-sites-aside {
         grid-column: span 3;
-        grid-row: 5;
-        margin-top: 20rem;
+        grid-row: 6;
+        margin-top: 19rem;
         margin-right: 2rem;
     }
     .location-food {
         grid-column: span 9;
-        grid-row: 6;
+        grid-row: 7;
     }
     .location-food-aside {
         grid-column: span 3;
-        grid-row: 6;
+        grid-row: 7;
         margin-top: 20rem;
         margin-right: 2rem;
     }
     .location-shopping {
         grid-column: span 9;
-        grid-row: 7;
+        grid-row: 8;
     }
     .location-shopping-aside {
         grid-column: span 3;
-        grid-row: 7;
+        grid-row: 8;
         margin-top: 20rem;
         margin-right: 2rem;
     }
@@ -648,7 +658,7 @@ nav {
 
 footer {
     grid-column: span 12;
-    grid-row: 11;
+    grid-row: 12;
     margin: 0;
     padding: 2rem;
     border-top: .25rem solid #002426;
