@@ -39,7 +39,7 @@ body {
     right: 0;
     bottom: 0;
     background-color: #cfe3e5;
-    animation: fade-out-background 10s ease-in-out forwards;
+    -webkit-animation: fade-out-background 10s ease-in-out forwards;
 }
 .map-animation img {
     height: auto;
@@ -47,8 +47,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: fade-out 7s ease-in-out forwards;
-    animation-delay: 0s;
+    -webkit-animation: fade-out 7s ease-in-out forwards;
+    -webkit-animation-delay: 0s;
 }
 .pin-animation img {
     height: auto;
@@ -56,10 +56,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: slide-in 7s ease-in-out forwards;
-    animation-delay: 0s;
+    -webkit-animation: slide-in 7s ease-in-out forwards;
+    -webkit-animation-delay: 0s;
 }
-@keyframes fade-out-background{
+@-webkit-keyframes fade-out-background{
     0% {
         opacity: 1;
     }
@@ -71,7 +71,7 @@ body {
         display: none;
     }
 }
-@keyframes fade-out {
+@-webkit-keyframes fade-out {
     0% {
         opacity: 1;
     }
@@ -86,7 +86,7 @@ body {
         display: none;
     }
 }
-@keyframes slide-in {
+@-webkit-keyframes slide-in {
     0% {
         translate: 150vw 0;
         opacity: 1;
