@@ -58,28 +58,41 @@
             </div>
         </header>
         <section class="tagline">
-            <h1>About</h1>
+            <h1>Submit Your Beta</h1>
         </section>
-        <section class="about">
-            <div class="adventure">
-                <img src="images/adventure.png" alt="mountains icon">
-                <h2>What's the Beta?</h2>
-                <p>Hello climber! My name is Caitlin, and I created Off the Wall Beta, because I love a good climbing trip. I also know that whether you are going near or far for that trip, or whether you are staying for a short or long while, that climbing is usually just one part of that adventure. Some of my favorite experiences have been the side adventures on those trips. This site is just for climbers who want to find fun food, sites, or shopping nearby their climbing destination. All these recommendations come from my own experiences, but as this site grows, I hope that other climbers can submit their own favorite spots to be added. As travelers we aren't just visiting these new places without impact. I hope that through visiting some of these recommended spots that we can engage more with the communities that we visit, and have a positive impact while on our adventures. Happy climbing!</p>
-            </div>
-            <div class="sites">
-                <img src="images/sites.png" alt="binoculars icon">
-                <h2>Sites</h2>
-                <p>When you see the sites icon you can expect to find places and events that are significant or special to the area you are visiitng. Remember to try to be present and respectful when visiting these special places, they will certainly have a lot of meaning in their own community that is so much more than just the pictures we take home with us.</p>
-            </div>
-            <div class="food">
-                <img src="images/food.png" alt="meat icon">
-                <h2>Food</h2>
-                <p>When you see the food icon you can expect to find places with delicious things to eat! Savor all of the parts of visiting a new place, and try some delicious bites!</p>            
-            </div>
-            <div class="shopping">
-                <img src="images/shopping.png" alt="bag icon">
-                <h2>Shopping</h2>
-                <p>When you see the shopping icon you can expect to find place to buy a variety of things. It could be something made a local artist, a place to buy some new closes, or maybe the local climbing shop to find guides books and gear.</p>
+        <section class="submit-beta">
+            <h2>Submit a Recommendation</h2>
+            <p>Do you have a fun site that you've visited, a delicious food recommendation, or a place that you found ideal for shopping? Here's the place to submit your recommendations. After review, if it seems like a good fit for the site I'll be sure to add it with credit!</p>
+            <div class="beta-form">
+                <form action="mailto:caitlin.maloney89@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Your Full Name</label><br>
+                    <input type="text" id="name" name="fullname" placeholder="Your name..."><br>
+                    <label for="type">Recommendation Type</label><br>
+                    <select id="type" name="type">
+                        <option value="site">Site</option>
+                        <option value="food">Food</option>
+                        <option value="shopping">Shopping</option>
+                    </select><br>
+                    <label for="location">Location</label><br>
+                    <select id="location" name="location">
+                        <option value="bishop">Bishop</option>
+                        <option value="brione">Brione</option>
+                        <option value="fontainebleu">Fontainebleu</option>
+                        <option value="hueco-tanks">Hueco Tanks</option>
+                        <option value="magicwood">Magicwood</option>
+                        <option value="mallorca">Mallorca</option>
+                        <option value="mt-blue-sky">Mt Blue Sky</option>
+                        <option value="rocklands">Rocklands</option>
+                        <option value="squamish">Squamish</option>
+                        <option value="yosemite">Yosemite</option>
+                    </select><br>
+                    <label for="place-name">Recommendation - Place Name</label><br>
+                    <input type="text" id="place-name" name="place-name" placeholder="Name of site, food, or shopping..."><br>
+                    <label for="description">Place Description</label><br>
+                    <textarea id="description" name="description" placeholder="Describe place here..."></textarea>
+                    <input class="submit" type="submit" value="Submit">
+                </form>
+                <h3>Thanks for Contributing!</h3>
             </div>
         </section>
         <footer>
