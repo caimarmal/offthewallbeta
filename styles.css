@@ -342,7 +342,10 @@ nav {
     background-color: #002426;
 }
 .squamish-style {
-    background-color: #002426;
+    background-image: url(images/squamish.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .bluesky-style {
     background-image: url(images/mtbluesky.jpeg);
@@ -446,6 +449,24 @@ nav {
 }
 .brione-style {
     background-image: url(images/brione.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fontainebleu-style {
+    background-image: url(images/font.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hueco-style {
+    background-image: url(images/hueco.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bishop-style {
+    background-image: url(images/bishop.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -848,7 +869,7 @@ nav {
     margin-bottom: 1rem;
     text-align: center;
     height: 40rem;
-    background-image: url(images/brione.jpeg);
+    background-image: url(images/self.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 35% 65%;
@@ -920,7 +941,7 @@ nav {
 .blog-image {
     width: auto;
     height: 35rem;
-    background-image: url(images/magicwood.jpeg);
+    background-image: url(images/rainy-day.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 35% 65%;
@@ -1062,6 +1083,7 @@ footer {
     color: #002426;
 }
 .footernav a {
+    text-decoration: none;
     padding: .75rem;
     border-radius: 1rem;
 }
