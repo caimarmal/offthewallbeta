@@ -453,7 +453,7 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
 }
-.fontainebleu-style {
+.fontainebleau-style {
     background-image: url(images/font.JPG);
     background-size: cover;
     background-repeat: no-repeat;
@@ -500,7 +500,7 @@ nav {
         grid-row: 1;
         text-align: left;
     }
-    .fontainebleu {
+    .fontainebleau {
         grid-column: span 6;
         grid-row: 2;
     }
@@ -527,7 +527,7 @@ nav {
         grid-column: span 12;
         grid-row: 1;
     }
-    .fontainebleu {
+    .fontainebleau {
         grid-column: span 3;
         grid-row: 2;
     }
@@ -619,6 +619,15 @@ nav {
     grid-row: 3;
     height: 40rem;
     background-image: url(images/brione.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 35% 65%;
+}
+.location-photo-font {
+    grid-column: span 12;
+    grid-row: 3;
+    height: 40rem;
+    background-image: url(images/font.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 35% 65%;
